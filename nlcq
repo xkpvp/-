@@ -1,6 +1,5 @@
 --xk nb
 --vouch me on v3rmillion and enjoy
-
 local MuscleLegends = Instance.new("ScreenGui")
 local balls = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
@@ -16,7 +15,19 @@ local TextButton_5 = Instance.new("TextButton")
 local Frame_5 = Instance.new("Frame")
 local TextButton_6 = Instance.new("TextButton")
 local Frame_6 = Instance.new("Frame")
-
+local OrionLib = Instance.new("TextButton")
+OrionLib.Name = "OrionLib"
+OrionLib.Parent = HannChannel
+OrionLib.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OrionLib.Position = UDim2.new(0.839879155, 0, -0.0123076923, 0)
+Open.Size = UDim2.new(0, 54, 0, 22)
+Open.Font = Enum.Font.SourceSans
+OrionLib.Text = "隐藏"
+OrionLib.TextColor3 = Color3.fromRGB(0, 0, 0)
+OrionLib.TextSize = 14.000
+OrionLib.MouseButton1Down:connect(function()
+Main.Visible = true
+OrionLib.Visible = false
 
 MuscleLegends.Name = "MuscleLegends"
 MuscleLegends.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -76,6 +87,7 @@ Frame_2.BackgroundTransparency = 0.950
 Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0, 0, 0.515151978, 0)
 Frame_2.Size = UDim2.new(0, 513, 0, 15)
+Frame_2.Draggable = true
 
 TextButton_3.Parent = balls
 TextButton_3.BackgroundColor3 = Color3.fromRGB(18, 21, 62)
