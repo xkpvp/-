@@ -1,0 +1,40 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "密钥UI名字", HidePremium = false, SaveConfig = false, IntroEnabled = false})
+
+local xkdh = Window:MakeTab({
+	Name = "主要",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+xkdh:AddButton({
+	Name = "穿墙jb",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/jvyN5hT8"))()
+  	end
+})
+
+xkdh:AddTextbox({
+	Name = "移动速度6",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		
+	end
+})
+
+local xiaomi = Window:MakeTab({
+	Name = "玩家",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+xiaomi:AddButton({
+	Name = "穿墙",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/G3GnBCyC", true))()
+  	end    
+})
+  	end
+})
