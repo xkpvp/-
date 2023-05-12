@@ -8,7 +8,7 @@ local HTTPService = game:GetService("HttpService")
 
 local Library = {
 	Themes = {
-		浅紫色 = {
+		Themes = {
 			Main = Color3.fromHSV(262/360, 60/255, 34/255),
 			Secondary = Color3.fromHSV(240/360, 40/255, 63/255),
 			Tertiary = Color3.fromHSV(260/360, 60/255, 148/255),
@@ -16,7 +16,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		灰色 = {
+		Serika = {
 			Main = Color3.fromRGB(50, 52, 55),
 			Secondary = Color3.fromRGB(80, 82, 85),
 			Tertiary = Color3.fromRGB(226, 183, 20),
@@ -32,7 +32,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		偏红 = {
+		Rust = {
 			Main = Color3.fromRGB(37, 35, 33),
 			Secondary = Color3.fromRGB(65, 63, 63),
 			Tertiary = Color3.fromRGB(237, 94, 38),
@@ -40,7 +40,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		黑色 = {
+		Aqua = {
 			Main = Color3.fromRGB(19, 21, 21),
 			Secondary = Color3.fromRGB(65, 63, 63),
 			Tertiary = Color3.fromRGB(51, 153, 137),
@@ -95,7 +95,7 @@ end
 function Library:change_theme(toTheme)
 	Library.CurrentTheme = toTheme
 	local c = self:lighten(toTheme.Tertiary, 20)
-	Library.DisplayName.Text = ",  欢迎来到北约<font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. LocalPlayer.DisplayName .. "</b> </font>"
+	Library.DisplayName.Text = "欢迎来到北约<font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. LocalPlayer.DisplayName .. "</b> </font>"
 	for color, objects in next, Library.ThemeObjects do
 		local themeColor = Library.CurrentTheme[color]
 		for _, obj in next, objects do
