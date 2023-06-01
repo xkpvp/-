@@ -1,10 +1,25 @@
 local TweenService = game:GetService("TweenService")
+local Toggle = Instance.new("TextButton")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HTTPService = game:GetService("HttpService")
+
+Toggle.Name = "Toggle"
+Toggle.Parent = TweenService
+Toggle.BackgroundColor3 = Color3.new(0, 0, 0)
+Toggle.BackgroundTransparency = 0
+Toggle.BorderSizePixel = 2
+Toggle.Position = UDim2.new(0, 0, 0.35, 0)
+Toggle.Size = UDim2.new(0, 70, 0, 30)
+Toggle.Font = Enum.Font.Gotham
+Toggle.Text = "隐藏/打开"
+Toggle.TextColor3 = Color3.new(255, 255, 255)
+Toggle.TextScaled = true
+Toggle.TextSize = 10
+Toggle.TextWrapped = true
 
 local Library = {
 	Themes = {
